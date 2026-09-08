@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# env: .env.local and friends stay out; the template is committed.
+!.env.example

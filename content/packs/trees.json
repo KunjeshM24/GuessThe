@@ -1,0 +1,623 @@
+{
+  "_comment": "Seed content for the Tree of the Day pack. Lives OUTSIDE src/ on purpose: it holds answers, and nothing under src/ should be able to import it via the @/ alias and drag it into a client bundle. Consumed only by scripts/seed-pack.mjs. Hints are ordered easy -> hard and deliberately never contain the answer or any closeTerm.",
+  "pack": "trees",
+  "puzzles": [
+    {
+      "answer": "Silver Birch",
+      "aliases": [
+        "betula pendula",
+        "european white birch",
+        "warty birch"
+      ],
+      "closeTerms": [
+        "birch",
+        "betula"
+      ],
+      "hints": [
+        "A slender, short-lived tree of northern woods and heathland, usually among the first to colonise bare ground.",
+        "The trunk is strikingly pale, almost white, and peels in fine papery horizontal strips.",
+        "Small triangular leaves flutter on thin stalks, and the outer twigs droop enough to give the crown a weeping outline.",
+        "Diamond-shaped black fissures crack the pale bark towards the base of older trunks.",
+        "Its Latin species name, pendula, refers to those drooping twigs. It is the national tree of Finland."
+      ],
+      "fact": "A pioneer species: its light, wind-blown seed lets it colonise cleared ground within a season, improving the soil for the slower, longer-lived trees that follow it."
+    },
+    {
+      "answer": "English Oak",
+      "aliases": [
+        "quercus robur",
+        "pedunculate oak",
+        "common oak",
+        "european oak"
+      ],
+      "closeTerms": [
+        "oak",
+        "quercus"
+      ],
+      "hints": [
+        "A broad, heavy-limbed tree that grows wider than it is tall in open ground, and can live a thousand years.",
+        "Its timber built medieval warships and cathedral roofs across northern Europe.",
+        "The leaves are deeply lobed with almost no stalk, and two small ear-like lobes clasp the twig.",
+        "The fruit is a smooth nut sitting in a scaly cup, carried on a long stalk.",
+        "Its species name robur means strength, and single ancient specimens are named landmarks in England."
+      ],
+      "fact": "It supports more species of insect, lichen and fungus than any other tree in Britain — over 2,000 have been recorded on it, more than 300 of which are found on nothing else."
+    },
+    {
+      "answer": "Weeping Willow",
+      "aliases": [
+        "salix babylonica",
+        "babylon willow"
+      ],
+      "closeTerms": [
+        "willow",
+        "salix"
+      ],
+      "hints": [
+        "Almost always planted beside water, where the reflection is half the point.",
+        "Long narrow leaves hang from branches that fall in curtains right to the ground.",
+        "Snapped twigs root readily in wet mud, so it spreads easily from broken fragments.",
+        "Bark from this genus was the traditional source of the compound that became aspirin.",
+        "Its Latin name wrongly credits Babylon; it actually came west from northern China along the silk routes."
+      ],
+      "fact": "The species name babylonica is a mistake. Linnaeus linked it to the biblical willows of Babylon, but the tree originates in northern China and reached Europe via the silk routes."
+    },
+    {
+      "answer": "Sugar Maple",
+      "aliases": [
+        "acer saccharum",
+        "rock maple",
+        "hard maple"
+      ],
+      "closeTerms": [
+        "maple",
+        "acer"
+      ],
+      "hints": [
+        "A large hardwood of eastern North America, best known for what it does in autumn.",
+        "Its five-lobed leaf is a national emblem.",
+        "The sap is tapped in late winter, when nights still freeze and days thaw.",
+        "Paired winged seeds spin to the ground like helicopter blades.",
+        "Roughly forty litres of its sap boil down to a single litre of syrup."
+      ],
+      "fact": "It takes around 40 litres of sap to make one litre of syrup, which is why a mature stand is tapped for decades rather than felled. Trees are usually 40 years old before the first tap."
+    },
+    {
+      "answer": "Ginkgo",
+      "aliases": [
+        "ginkgo biloba",
+        "gingko",
+        "maidenhair tree",
+        "ginko"
+      ],
+      "closeTerms": [
+        "ginkgo",
+        "gingko",
+        "maidenhair"
+      ],
+      "hints": [
+        "A tree with no close living relatives at all — the sole survivor of an entire plant division.",
+        "Fan-shaped leaves with parallel veins and a notch in the middle turn uniform butter-yellow, then drop almost all at once.",
+        "Fossils nearly identical to it are found in rocks 200 million years old.",
+        "The fleshy seed coat of the female tree smells strongly of rancid butter, so cities plant only males.",
+        "Several specimens within two kilometres of the Hiroshima blast survived it and are still alive."
+      ],
+      "fact": "A living fossil with no close living relatives. Six trees within two kilometres of the Hiroshima hypocentre survived the 1945 blast, resprouted the following spring, and are still growing."
+    },
+    {
+      "answer": "Coast Redwood",
+      "aliases": [
+        "sequoia sempervirens",
+        "california redwood",
+        "redwood",
+        "coastal redwood"
+      ],
+      "closeTerms": [
+        "redwood",
+        "sequoia"
+      ],
+      "hints": [
+        "The tallest living thing on Earth.",
+        "It grows in a narrow fog belt along one stretch of Pacific coastline.",
+        "Thick fibrous bark, sometimes a foot deep, resists fire and is a deep rusty colour.",
+        "It absorbs fog directly through its foliage, which supplies much of its summer water.",
+        "The tallest known individual, named Hyperion, stands over 115 metres."
+      ],
+      "fact": "The tallest known individual, Hyperion, exceeds 115 metres. Its exact location is kept secret, because foot traffic around the base compacts the shallow roots the tree depends on."
+    },
+    {
+      "answer": "Scots Pine",
+      "aliases": [
+        "pinus sylvestris",
+        "scotch pine",
+        "scots fir"
+      ],
+      "closeTerms": [
+        "pine",
+        "pinus"
+      ],
+      "hints": [
+        "A hardy conifer with the widest natural range in its genus, from Spain to Siberia.",
+        "The needles come in twisted pairs and are distinctly blue-green.",
+        "The upper trunk and branches glow orange in low sun, against grey bark lower down.",
+        "Old open-grown trees drop their lower limbs and take on a flat, umbrella-like crown.",
+        "It is the last remnant of the Caledonian forest and the national tree of Scotland."
+      ],
+      "fact": "The only pine native to northern Europe. The Caledonian forest fragments it forms in the Highlands are the surviving remains of woodland that once covered much of Scotland."
+    },
+    {
+      "answer": "Horse Chestnut",
+      "aliases": [
+        "aesculus hippocastanum",
+        "conker tree",
+        "horsechestnut"
+      ],
+      "closeTerms": [
+        "chestnut",
+        "aesculus",
+        "conker"
+      ],
+      "hints": [
+        "A big domed park and avenue tree, planted mainly for its spring flower spikes.",
+        "White flower candles stand upright all over the crown in May.",
+        "The leaves are palmate — five to seven leaflets radiating from a single point like fingers.",
+        "Glossy brown nuts fall inside spiky green cases and are used in a children's playground game.",
+        "Its seeds are mildly toxic, and it is not related to the edible nut it is named after."
+      ],
+      "fact": "Despite the name it is unrelated to the edible sweet chestnut, and belongs to a different family entirely. Its glossy seeds are mildly poisonous to people and horses alike."
+    },
+    {
+      "answer": "Olive",
+      "aliases": [
+        "olea europaea",
+        "common olive"
+      ],
+      "closeTerms": [
+        "olive",
+        "olea"
+      ],
+      "hints": [
+        "A small gnarled evergreen that is the emblem of an entire sea's cuisine.",
+        "Narrow grey-green leaves are silver underneath and flash when the wind turns them.",
+        "Trunks become hollow and twisted with age, yet the tree keeps fruiting.",
+        "Some cultivated groves have been productive for over a thousand years.",
+        "Its oil-rich fruit is inedibly bitter until cured in brine or lye."
+      ],
+      "fact": "The fruit is far too bitter to eat straight from the tree — it has to be cured in brine, lye or dry salt first, a process attested for at least 6,000 years around the Mediterranean."
+    },
+    {
+      "answer": "Baobab",
+      "aliases": [
+        "adansonia",
+        "adansonia digitata",
+        "african baobab",
+        "upside down tree"
+      ],
+      "closeTerms": [
+        "baobab",
+        "adansonia"
+      ],
+      "hints": [
+        "A tree of dry savannah with a trunk wildly out of proportion to its crown.",
+        "For much of the year it stands bare, the branches looking like roots in the air.",
+        "The swollen trunk stores water and can be many metres across.",
+        "Local names call it the upside-down tree.",
+        "Its large dry fruit is now sold worldwide as a tart, vitamin-C-rich powder."
+      ],
+      "fact": "The swollen trunk can hold over 100,000 litres of water, letting it survive months of drought. Hollowed specimens have served as shops, chapels and even a bus shelter."
+    },
+    {
+      "answer": "Quaking Aspen",
+      "aliases": [
+        "populus tremuloides",
+        "trembling aspen",
+        "quakie",
+        "american aspen"
+      ],
+      "closeTerms": [
+        "aspen",
+        "poplar",
+        "populus"
+      ],
+      "hints": [
+        "A slim pale-barked tree of North American mountains that turns whole hillsides gold in autumn.",
+        "Its round leaves sit on flattened stalks, so the slightest breeze sets them shivering.",
+        "It spreads by root suckers, so a whole grove is often a single organism.",
+        "The greenish-white bark photosynthesises, letting it gain energy even in winter sun.",
+        "A Utah colony called Pando is among the heaviest and oldest known living organisms."
+      ],
+      "fact": "A Utah clone named Pando covers 43 hectares as one organism sharing a single root system, and is estimated to weigh around 6,000 tonnes."
+    },
+    {
+      "answer": "Douglas Fir",
+      "aliases": [
+        "pseudotsuga menziesii",
+        "oregon pine",
+        "douglasfir"
+      ],
+      "closeTerms": [
+        "fir",
+        "douglas",
+        "pseudotsuga"
+      ],
+      "hints": [
+        "A giant conifer of the Pacific Northwest, second only to one other tree in height.",
+        "Its cones hang downward and have three-pointed bracts poking out between the scales.",
+        "Those bracts are often described as the back legs and tail of a mouse diving into the cone.",
+        "It is not a true member of the genus its common name suggests, hence a Latin prefix meaning 'false'.",
+        "It is named after the Scottish botanist who sent seed back to Britain in 1827."
+      ],
+      "fact": "Not a true fir at all — its Latin name Pseudotsuga means 'false hemlock'. The common name honours David Douglas, who introduced it to Britain in 1827."
+    },
+    {
+      "answer": "Common Beech",
+      "aliases": [
+        "fagus sylvatica",
+        "european beech",
+        "beech"
+      ],
+      "closeTerms": [
+        "beech",
+        "fagus"
+      ],
+      "hints": [
+        "Its smooth grey trunk is notorious for attracting carved initials.",
+        "Dense summer shade means almost nothing grows on the woodland floor beneath it.",
+        "Young leaves are bright lime green with silky hairs along the margin.",
+        "Clipped hedges of it hold their coppery dead leaves right through winter.",
+        "Its small triangular nuts, called mast, are produced heavily only every few years."
+      ],
+      "fact": "It fruits in irregular 'mast years', flooding the forest floor with nuts every few seasons so that seed predators cannot possibly eat the whole crop at once."
+    },
+    {
+      "answer": "Joshua Tree",
+      "aliases": [
+        "yucca brevifolia",
+        "yucca palm"
+      ],
+      "closeTerms": [
+        "yucca",
+        "joshua"
+      ],
+      "hints": [
+        "Not really a tree in the usual sense, but the tallest plant of its desert.",
+        "It grows in the Mojave and nowhere else.",
+        "Stiff dagger-like leaves cluster at the ends of thick, shaggy limbs.",
+        "It only branches after a stem has flowered or been damaged.",
+        "Settlers said the limbs looked like a biblical prophet raising his arms in prayer, and a US national park carries the name."
+      ],
+      "fact": "It depends almost entirely on a single insect, the yucca moth, which deliberately packs pollen into the flower and lays its eggs in the ovary — neither species can reproduce without the other."
+    },
+    {
+      "answer": "Date Palm",
+      "aliases": [
+        "phoenix dactylifera",
+        "date"
+      ],
+      "closeTerms": [
+        "palm",
+        "phoenix",
+        "date"
+      ],
+      "hints": [
+        "A tall single-stemmed desert plant grown in oases for thousands of years.",
+        "Its trunk is a rough column of old leaf bases, with no branches at all.",
+        "Feather-shaped fronds up to five metres long form a crown at the very top.",
+        "Male and female plants are separate, and growers hand-pollinate for a reliable crop.",
+        "Its sweet sticky fruit is a staple across North Africa and the Middle East."
+      ],
+      "fact": "Cultivated for at least 5,000 years, it is among the oldest domesticated fruit crops. One mature tree can yield over 100 kg of fruit a year for a century."
+    },
+    {
+      "answer": "Cork Oak",
+      "aliases": [
+        "quercus suber",
+        "cork tree"
+      ],
+      "closeTerms": [
+        "oak",
+        "quercus",
+        "cork"
+      ],
+      "hints": [
+        "An evergreen Mediterranean tree grown as much for its bark as its wood.",
+        "That bark is thick, spongy and deeply corrugated, and regrows after harvest.",
+        "Freshly stripped trunks glow orange-red for months before weathering grey.",
+        "The bark is peeled by hand roughly every nine years without killing the tree.",
+        "Portugal and Spain supply most of the world's wine-bottle stoppers from it."
+      ],
+      "fact": "The bark is stripped by hand every nine years or so and grows back, making it one of very few commercial products harvested repeatedly from a living tree without felling it."
+    },
+    {
+      "answer": "Monkey Puzzle",
+      "aliases": [
+        "araucaria araucana",
+        "chilean pine"
+      ],
+      "closeTerms": [
+        "araucaria",
+        "monkey"
+      ],
+      "hints": [
+        "An unmistakable evergreen from the volcanic slopes of Chile and Argentina.",
+        "Branches radiate in whorls and curve upward, leaving the lower trunk bare with age.",
+        "Every branch is armoured in stiff, sharp, overlapping triangular scales.",
+        "It is Chile's national tree, and its large seeds are a traditional food of the Pehuenche people.",
+        "Its English name comes from a Victorian joke about which animal would struggle to climb it."
+      ],
+      "fact": "The English name comes from a Victorian visitor's remark that the spiny branches would baffle any climbing animal. It is Chile's national tree and now endangered in the wild."
+    },
+    {
+      "answer": "London Plane",
+      "aliases": [
+        "platanus acerifolia",
+        "platanus x acerifolia",
+        "platanus hispanica",
+        "london planetree",
+        "plane tree"
+      ],
+      "closeTerms": [
+        "plane",
+        "platanus",
+        "sycamore"
+      ],
+      "hints": [
+        "The archetypal big-city street tree of Europe, chosen for its tolerance of pollution.",
+        "Its bark flakes off in irregular plates, leaving a camouflage pattern of cream, olive and grey.",
+        "Shedding that bark is how it sheds the soot and grime it has absorbed.",
+        "Bristly spherical fruits hang on long stalks through winter, usually in pairs.",
+        "It is a hybrid, probably raised in seventeenth-century Spain, and its leaves resemble a maple's."
+      ],
+      "fact": "A hybrid of two species from opposite sides of the Atlantic. It survives in cities partly because shedding its bark in plates also sheds the pollutants absorbed along with it."
+    },
+    {
+      "answer": "European Yew",
+      "aliases": [
+        "taxus baccata",
+        "yew",
+        "common yew",
+        "english yew"
+      ],
+      "closeTerms": [
+        "yew",
+        "taxus"
+      ],
+      "hints": [
+        "A dark, dense evergreen most often found in old churchyards.",
+        "Nearly every part of it is highly poisonous, except the fleshy red cup around the seed.",
+        "Its close-grained, springy wood made the medieval longbow.",
+        "Trunks become fluted and hollow with age, making them nearly impossible to date by rings.",
+        "Some British specimens are thought to be well over 2,000 years old."
+      ],
+      "fact": "Its trunk hollows out with age, so ring-counting fails entirely and the oldest British specimens can only be estimated — several are thought to predate the churchyards built around them."
+    },
+    {
+      "answer": "Japanese Maple",
+      "aliases": [
+        "acer palmatum",
+        "momiji",
+        "japanese acer",
+        "smooth japanese maple"
+      ],
+      "closeTerms": [
+        "maple",
+        "acer"
+      ],
+      "hints": [
+        "A small layered ornamental tree grown almost entirely for the colour of its foliage.",
+        "Hundreds of named cultivars exist, from deep purple to lime green to nearly thread-like leaves.",
+        "Palmate leaves are cut deeply into five to nine pointed lobes.",
+        "It is a centrepiece of traditional gardens in its home country and a favourite subject for bonsai.",
+        "Autumn viewing of its colour, momijigari, is a national pastime there."
+      ],
+      "fact": "Autumn leaf-viewing, momijigari, is a centuries-old tradition built largely around this tree, and the colour front is still tracked each year as it moves south across Japan."
+    },
+    {
+      "answer": "Cedar of Lebanon",
+      "aliases": [
+        "cedrus libani",
+        "lebanon cedar",
+        "lebanese cedar"
+      ],
+      "closeTerms": [
+        "cedar",
+        "cedrus"
+      ],
+      "hints": [
+        "A massive evergreen whose flat tiered branches make an unmistakable silhouette on country estates.",
+        "Needles grow in dense rosettes on short spurs, and barrel-shaped cones sit upright on the branches.",
+        "Its fragrant, rot-resistant timber was traded across the ancient Near East.",
+        "The temple of Solomon and the Phoenician fleet were both said to be built from it.",
+        "The tree appears on a national flag."
+      ],
+      "fact": "It appears on the flag of Lebanon. The ancient forests were logged for millennia, for Phoenician ships and Egyptian tombs alike, and only scattered protected groves survive."
+    },
+    {
+      "answer": "Jacaranda",
+      "aliases": [
+        "jacaranda mimosifolia",
+        "blue jacaranda"
+      ],
+      "closeTerms": [
+        "jacaranda"
+      ],
+      "hints": [
+        "A South American tree now planted across warm cities worldwide for a few spectacular weeks a year.",
+        "Fern-like, doubly divided leaves give it a light feathery crown.",
+        "It flowers before the leaves are fully out, covering itself completely.",
+        "The blossom is a striking violet-blue, and carpets the pavement beneath.",
+        "In Pretoria and Sydney its flowering is a byword for exam season."
+      ],
+      "fact": "Native to Argentina and Bolivia, it now defines the spring skyline of Pretoria, Sydney, Lisbon and Mexico City — a rare case of one ornamental tree becoming a civic emblem far from home."
+    },
+    {
+      "answer": "Banyan",
+      "aliases": [
+        "ficus benghalensis",
+        "indian banyan",
+        "bengal fig"
+      ],
+      "closeTerms": [
+        "fig",
+        "ficus",
+        "banyan"
+      ],
+      "hints": [
+        "A single tree that can look like an entire grove.",
+        "It often begins life in the crown of another tree, then strangles it.",
+        "Aerial roots drop from the branches, take root, and thicken into new trunks.",
+        "One specimen in India covers several acres and has thousands of supporting trunks.",
+        "It is the national tree of India, and its tiny flowers are pollinated inside the fruit by specialised wasps."
+      ],
+      "fact": "It spreads sideways indefinitely by dropping aerial roots that thicken into new trunks. The Great Banyan in Kolkata covers over 1.8 hectares and reads as a forest rather than a tree."
+    },
+    {
+      "answer": "Norway Spruce",
+      "aliases": [
+        "picea abies",
+        "european spruce",
+        "common spruce"
+      ],
+      "closeTerms": [
+        "spruce",
+        "picea",
+        "fir"
+      ],
+      "hints": [
+        "The traditional European Christmas tree.",
+        "Long cylindrical cones hang downward and fall whole rather than breaking up.",
+        "Sharp four-sided needles are set singly on tiny woody pegs, which stay behind after the needles drop.",
+        "It is the standard timber and paper species of northern Europe, and the wood of violin soundboards.",
+        "A Swedish specimen named Old Tjikko has a root system dated to around 9,500 years."
+      ],
+      "fact": "A Swedish specimen called Old Tjikko has a root system radiocarbon-dated to roughly 9,500 years, though its visible stem is much younger — the plant keeps regenerating from the same roots."
+    },
+    {
+      "answer": "Bristlecone Pine",
+      "aliases": [
+        "pinus longaeva",
+        "great basin bristlecone pine",
+        "bristlecone",
+        "methuselah tree"
+      ],
+      "closeTerms": [
+        "pine",
+        "pinus",
+        "bristlecone"
+      ],
+      "hints": [
+        "It grows only on a few dry, wind-scoured mountain ranges of the American West.",
+        "Twisted, stripped trunks often keep just a thin ribbon of living bark.",
+        "Harsh conditions and dense resinous wood make it extraordinarily slow-growing and rot-resistant.",
+        "Its cones carry a small incurved prickle on each scale.",
+        "One individual, Methuselah, has been ring-dated to over 4,800 years."
+      ],
+      "fact": "A specimen named Methuselah has been dated by ring count to more than 4,800 years, among the oldest known non-clonal organisms. Its exact location in California is undisclosed."
+    },
+    {
+      "answer": "Southern Magnolia",
+      "aliases": [
+        "magnolia grandiflora",
+        "bull bay",
+        "magnolia",
+        "evergreen magnolia"
+      ],
+      "closeTerms": [
+        "magnolia"
+      ],
+      "hints": [
+        "A glossy evergreen of the American South, planted worldwide against warm walls.",
+        "Leaves are thick and leathery, dark above and often rust-brown and felted beneath.",
+        "Enormous creamy flowers up to 30 cm across smell faintly of lemon.",
+        "Its genus evolved before bees existed, and the tough flowers are built for beetles.",
+        "It is both the state flower and the state tree of Mississippi."
+      ],
+      "fact": "Its genus is old enough to predate bees, so the flowers are beetle-pollinated. That is why the petals are unusually tough and the flower parts sit in a simple spiral rather than distinct whorls."
+    },
+    {
+      "answer": "Yoshino Cherry",
+      "aliases": [
+        "prunus yedoensis",
+        "prunus x yedoensis",
+        "somei yoshino",
+        "yoshino",
+        "japanese flowering cherry"
+      ],
+      "closeTerms": [
+        "cherry",
+        "prunus",
+        "sakura"
+      ],
+      "hints": [
+        "A small tree grown for a single week of spring, and tracked on national weather forecasts.",
+        "Pale pink buds open to almost-white five-petalled blossom before the leaves appear.",
+        "It is a sterile hybrid, so every tree is a graft or cutting from the same original.",
+        "Japan gave 3,000 of them to Washington DC in 1912, and they still ring the Tidal Basin.",
+        "It is the dominant variety of the hanami festival and of Tokyo's blossom forecast."
+      ],
+      "fact": "Almost every specimen is a clone of one original hybrid, which is why a whole avenue blooms and drops within the same few days — the basis of Japan's nationwide blossom forecast."
+    },
+    {
+      "answer": "European Ash",
+      "aliases": [
+        "fraxinus excelsior",
+        "common ash",
+        "ash"
+      ],
+      "closeTerms": [
+        "ash",
+        "fraxinus"
+      ],
+      "hints": [
+        "A tall woodland tree, among the last to come into leaf and the first to lose it.",
+        "Winter twigs are stout and grey, tipped with unmistakable sooty-black buds.",
+        "Pinnate leaves carry seven to thirteen leaflets on a single stalk.",
+        "Its tough, springy, shock-absorbing timber made tool handles, oars and early car frames.",
+        "A fungal dieback has killed a large share of Europe's population since the 1990s."
+      ],
+      "fact": "Its timber is exceptionally shock-absorbent, hence tool handles, hockey sticks and the frames of early cars. Ash dieback, a fungus arriving from Asia, has since killed a large share of Europe's trees."
+    },
+    {
+      "answer": "Blue Gum",
+      "aliases": [
+        "eucalyptus globulus",
+        "tasmanian blue gum",
+        "southern blue gum",
+        "bluegum"
+      ],
+      "closeTerms": [
+        "eucalyptus",
+        "gum"
+      ],
+      "hints": [
+        "A fast-growing Australian evergreen now planted for pulp across four continents.",
+        "Bark peels away in long ribbons, leaving a smooth mottled trunk beneath.",
+        "Juvenile leaves are rounded and powdery; adult leaves are long, curved, and hang vertically.",
+        "Its aromatic oil is distilled for decongestants and cleaning products.",
+        "It is the floral emblem of Tasmania, and dominates Californian and Iberian plantations."
+      ],
+      "fact": "Its adult leaves hang edge-on to the sun to cut water loss, which is why these woodlands cast so little shade. The volatile oil that makes the tree useful also makes it dangerously flammable."
+    },
+    {
+      "answer": "Dawn Redwood",
+      "aliases": [
+        "metasequoia glyptostroboides",
+        "metasequoia",
+        "dawn sequoia"
+      ],
+      "closeTerms": [
+        "redwood",
+        "sequoia",
+        "metasequoia"
+      ],
+      "hints": [
+        "A conifer that drops every needle each autumn, turning foxy orange first.",
+        "Its trunk is deeply fluted, with armpit-like hollows beneath each branch.",
+        "It was described from fossils before anyone knew it was still alive.",
+        "A surviving population was found in a remote Chinese valley in the 1940s.",
+        "Seed collected in 1948 was distributed worldwide, and nearly every planted specimen descends from it."
+      ],
+      "fact": "Known only from fossils until living trees were found in Hubei, China, in the 1940s. Seed sent abroad in 1948 is the ancestor of virtually every specimen planted anywhere since."
+    }
+  ]
+}

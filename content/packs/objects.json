@@ -1,0 +1,396 @@
+{
+  "_comment": "Seed content for the Object of the Day pack. Same shape as trees.json and read by the same seed script and the same engine — no pack-specific code anywhere. Lives outside src/ because it holds answers. Hints are ordered easy -> hard and never contain the answer or a closeTerm.",
+  "pack": "objects",
+  "puzzles": [
+    {
+      "answer": "Paperclip",
+      "aliases": ["paper clip", "gem clip"],
+      "closeTerms": ["clip", "fastener"],
+      "hints": [
+        "A tiny piece of bent wire that has barely changed in over a century.",
+        "It holds a few sheets together without piercing them.",
+        "The standard shape is a double oval, known as the Gem pattern.",
+        "Norwegians wore one on the lapel as a quiet symbol of resistance during the occupation.",
+        "Its most famous digital incarnation was an animated assistant in Microsoft Office."
+      ],
+      "fact": "The double-oval Gem design was never patented by the man usually credited with it. Norwegians wore one on the lapel during the Nazi occupation as a silent sign of unity."
+    },
+    {
+      "answer": "Umbrella",
+      "aliases": ["brolly", "parapluie"],
+      "closeTerms": ["umbrella", "parasol"],
+      "hints": [
+        "A portable canopy on a folding frame, carried in one hand.",
+        "Ribs radiate from a central shaft and lock open with a spring catch.",
+        "It was a sunshade for millennia before anyone thought to waterproof one.",
+        "Superstition says opening one indoors invites bad luck.",
+        "Jonas Hanway was mocked in the streets for carrying one through 1750s London."
+      ],
+      "fact": "It existed as a sunshade in ancient Egypt and China for thousands of years before waterproofed versions appeared. Jonas Hanway was ridiculed for carrying one in 1750s London."
+    },
+    {
+      "answer": "Stapler",
+      "aliases": ["swingline", "paper stapler"],
+      "closeTerms": ["stapler", "staple"],
+      "hints": [
+        "A spring-loaded desk tool that joins sheets with a small metal fastener.",
+        "Press down and a thin wire clip is driven through the paper and bent flat underneath.",
+        "The plate in the base swivels, so the wire can be bent outward instead.",
+        "An early ornate model was supposedly made for King Louis XV, one sheet at a time.",
+        "A red Swingline model became the emotional centre of the film Office Space."
+      ],
+      "fact": "The anvil in the base rotates: one setting clinches the wire inward for permanent binding, the other bends it outward so the sheets can be pulled apart again cleanly."
+    },
+    {
+      "answer": "Corkscrew",
+      "aliases": ["wine opener", "waiters friend", "screwpull"],
+      "closeTerms": ["corkscrew", "opener", "bottle opener"],
+      "hints": [
+        "A helix of steel with a handle, kept in almost every kitchen drawer.",
+        "It descended from a tool for pulling wadding out of musket barrels.",
+        "The winged variety uses two levers that rise as you turn the centre.",
+        "Sommeliers prefer the folding pocket version with a small blade and a hinged fulcrum.",
+        "Its entire job is to defeat a compressed plug of oak bark."
+      ],
+      "fact": "It evolved from the bulletscrew, a worm on a rod used to pull wadding and stuck shot out of musket barrels — which is why the business end is still called the worm."
+    },
+    {
+      "answer": "Zipper",
+      "aliases": ["zip", "zip fastener", "slide fastener"],
+      "closeTerms": ["zipper", "zip", "fastener"],
+      "hints": [
+        "Two rows of interlocking teeth joined by a sliding tab.",
+        "It replaced long rows of buttons and hooks on boots and trousers.",
+        "The tab's Y-shaped channel does all the work, meshing or parting the teeth.",
+        "B. F. Goodrich is credited with naming it after the sound it makes.",
+        "Aldous Huxley made it a symbol of frictionless modernity in Brave New World."
+      ],
+      "fact": "The slider is just a Y-shaped channel: pulled one way it forces the teeth to mesh, pulled the other it wedges them apart. Nothing inside it moves at all."
+    },
+    {
+      "answer": "Whisk",
+      "aliases": ["balloon whisk", "egg whisk", "wire whisk"],
+      "closeTerms": ["whisk", "beater"],
+      "hints": [
+        "A bundle of thin wire loops fixed into a handle.",
+        "Its purpose is to force air into something until the texture changes.",
+        "The balloon shape suits egg whites; a flat coil suits sauces in a pan.",
+        "Before wire, cooks bundled birch twigs together for the same job.",
+        "It is what turns liquid cream into something that holds a peak."
+      ],
+      "fact": "It works by dragging air into the liquid and shearing proteins so they unfold and trap the bubbles. A bundle of birch twigs did the same job for centuries."
+    },
+    {
+      "answer": "Padlock",
+      "aliases": ["combination padlock", "shackle lock"],
+      "closeTerms": ["lock", "padlock"],
+      "hints": [
+        "A portable, detachable security device with a hinged metal loop.",
+        "The U-shaped shackle springs free when the right key is turned.",
+        "Inside, a stack of spring-loaded pin pairs must align along a shear line.",
+        "Couples attach them to bridge railings until the weight becomes a hazard.",
+        "Versions without a keyway use a rotating numbered dial instead."
+      ],
+      "fact": "The pin-tumbler mechanism inside is essentially unchanged from ancient Egyptian designs: a row of pins of differing lengths that only line up along the shear line for the right key."
+    },
+    {
+      "answer": "Toaster",
+      "aliases": ["pop up toaster", "electric toaster"],
+      "closeTerms": ["toaster", "grill"],
+      "hints": [
+        "A countertop box with slots, found in most kitchens.",
+        "Nichrome wire glows orange behind a sheet of mica to do the work.",
+        "A bimetallic strip bends as it warms, which is how it knows when to stop.",
+        "The spring-loaded carriage releases and jumps up when the circuit opens.",
+        "Its output is browned bread, thanks to the Maillard reaction."
+      ],
+      "fact": "The timer is not a clock — a bimetallic strip warms and bends until it releases the catch, which is why the same setting browns differently on a cold morning."
+    },
+    {
+      "answer": "Hourglass",
+      "aliases": ["sand timer", "sandglass", "egg timer"],
+      "closeTerms": ["hourglass", "timer"],
+      "hints": [
+        "Two glass bulbs joined at a narrow waist, usually held in a wooden frame.",
+        "It measures one fixed interval and nothing else — it cannot tell you what time it is.",
+        "The flow rate depends on the aperture, not on how much is still waiting above.",
+        "Ships used them alongside a knotted line to work out their speed.",
+        "Turn it over and it starts again; carved on tombstones it means time is running out."
+      ],
+      "fact": "Unlike water, granular flow through the neck stays constant regardless of how much is left above it — which is why it keeps time accurately from start to finish."
+    },
+    {
+      "answer": "Wheelbarrow",
+      "aliases": ["barrow", "garden barrow"],
+      "closeTerms": ["barrow", "cart", "wheelbarrow"],
+      "hints": [
+        "A single-wheeled carrier with two handles, on every building site.",
+        "It is a second-class lever: the load sits between the pivot and your hands.",
+        "That geometry means you lift only part of the weight; the ground takes the rest.",
+        "Han dynasty China had them centuries before Europe did.",
+        "Tip it forward and the whole load slides out exactly where you want it."
+      ],
+      "fact": "Because it is a second-class lever, the person lifting carries only a fraction of the load — the rest is borne by the wheel, which is why one person can move what two could not carry."
+    },
+    {
+      "answer": "Safety Pin",
+      "aliases": ["nappy pin", "diaper pin"],
+      "closeTerms": ["pin"],
+      "hints": [
+        "A single length of sprung wire bent back on itself, with a clasp at one end.",
+        "The coil at the base provides the tension that keeps the sharp end seated.",
+        "A small sheath covers the point so it cannot prick the wearer.",
+        "Walter Hunt devised it in 1849, reportedly to settle a fifteen-dollar debt.",
+        "Punk fashion adopted it as jewellery and as a badge of do-it-yourself defiance."
+      ],
+      "fact": "Walter Hunt patented it in 1849 and sold the rights for $400 to clear a $15 debt. The buyer made a fortune from it."
+    },
+    {
+      "answer": "Thermos",
+      "aliases": ["vacuum flask", "thermos flask", "dewar flask", "vacuum bottle"],
+      "closeTerms": ["thermos", "flask"],
+      "hints": [
+        "A double-walled container that keeps its contents at whatever temperature you gave them.",
+        "The gap between the walls is evacuated, so conduction and convection have nothing to cross.",
+        "A silvered mirror finish on the inner surface reflects radiant heat back where it came from.",
+        "James Dewar built the first one to hold liquefied gases in his laboratory.",
+        "An old joke asks how it knows whether to keep things hot or cold."
+      ],
+      "fact": "James Dewar built it in 1892 to store liquefied gases and never patented it. A German glassblower commercialised the idea under a brand name that became the everyday word for it."
+    },
+    {
+      "answer": "Colander",
+      "aliases": ["pasta strainer", "kitchen colander"],
+      "closeTerms": ["colander", "sieve", "strainer"],
+      "hints": [
+        "A perforated bowl that appears in the sink at the end of cooking pasta.",
+        "Its holes are wide enough to pass water instantly while holding back the solids.",
+        "Usually stainless steel or plastic, standing on a foot ring or two side handles.",
+        "Members of one parody religion have gone to court for the right to wear one in ID photos.",
+        "The finer mesh-lined version of the same idea is a different tool with a different name."
+      ],
+      "fact": "Pastafarians have won the right in several jurisdictions to wear one in official identity photographs, on the grounds that it counts as religious headgear."
+    },
+    {
+      "answer": "Ballpoint Pen",
+      "aliases": ["biro", "ballpoint", "ball point pen", "bic"],
+      "closeTerms": ["pen", "biro"],
+      "hints": [
+        "The default writing instrument of the twentieth century, given away by the million.",
+        "A tiny rotating sphere set in a socket meters thick ink onto the page.",
+        "Its oil-based ink dries almost on contact, unlike the water-based stuff before it.",
+        "Its Hungarian-Argentine inventor got the idea watching how fast newspaper ink dried.",
+        "The hole in the barrel is a safety measure, so a swallowed cap cannot seal the airway."
+      ],
+      "fact": "The small hole in the barrel of the cheapest models exists so that a cap lodged in someone's throat still lets air through — a design change made after several choking deaths."
+    },
+    {
+      "answer": "Compass",
+      "aliases": ["magnetic compass", "navigational compass"],
+      "closeTerms": ["compass"],
+      "hints": [
+        "A palm-sized instrument that always answers the same single question.",
+        "A magnetised needle floats in liquid, which damps its swing.",
+        "It points at a wandering magnetic spot, not the geographic one — the gap is called declination.",
+        "Chinese diviners used lodestone versions long before any sailor did.",
+        "A rotating bezel lets you set a bearing and walk it across open ground."
+      ],
+      "fact": "It points at the magnetic pole, which drifts — currently at tens of kilometres a year — so charts must state the local declination and the year it was measured."
+    },
+    {
+      "answer": "Metronome",
+      "aliases": ["maelzel metronome"],
+      "closeTerms": ["metronome"],
+      "hints": [
+        "A pyramid-shaped box that sits on a piano and is widely resented.",
+        "An inverted pendulum with a sliding weight sets the rate.",
+        "Move the weight upward and it ticks more slowly, which surprises most people.",
+        "Its markings run from grave through andante to prestissimo.",
+        "Maelzel patented it, and Beethoven was among the first to mark scores with its numbers."
+      ],
+      "fact": "It is an inverted pendulum, so sliding the weight up slows it down — the opposite of a clock pendulum. Beethoven was among the first composers to publish tempo markings using it."
+    },
+    {
+      "answer": "Spirit Level",
+      "aliases": ["bubble level", "builders level", "spirit levels"],
+      "closeTerms": ["level"],
+      "hints": [
+        "A straight bar with a small sealed glass tube set into its face.",
+        "The tube holds liquid, but is deliberately not filled all the way.",
+        "The trapped bubble rises to the highest point, and that is what you read.",
+        "Alcohol is used rather than water: it stays fluid in the cold and moves freely.",
+        "Extra tubes set at right angles let you check plumb as well as horizontal."
+      ],
+      "fact": "The tube is very slightly curved, so the bubble sits at its highest point. Alcohol is used because it has low viscosity and will not freeze on a winter site."
+    },
+    {
+      "answer": "Typewriter",
+      "aliases": ["type writer", "manual typewriter"],
+      "closeTerms": ["typewriter"],
+      "hints": [
+        "A mechanical machine that puts one character on paper per keystroke.",
+        "Each key swings a hammer against an inked ribbon.",
+        "A bell warns that the line is nearly full, and a lever returns the carriage.",
+        "Its key arrangement was designed partly to stop adjacent hammers colliding.",
+        "That layout, QWERTY, has outlived the machine by many decades."
+      ],
+      "fact": "QWERTY was arranged partly to separate letters commonly typed in sequence, so the hammers were less likely to jam. The layout survived the mechanism that required it."
+    },
+    {
+      "answer": "Abacus",
+      "aliases": ["soroban", "suanpan", "counting frame"],
+      "closeTerms": ["abacus"],
+      "hints": [
+        "A wooden frame of rods with beads that slide along them.",
+        "Each rod is a place value, and the beads are the digits.",
+        "On the classic design the upper beads are worth five and the lower ones one.",
+        "A skilled user beat an electric calculator in a famous 1946 contest in Tokyo.",
+        "Practised operators eventually stop touching it and picture the beads instead."
+      ],
+      "fact": "In a 1946 Tokyo contest a Japanese clerk beat a US Army electric calculator at addition, subtraction and division. Expert users can compute mentally by visualising the beads."
+    },
+    {
+      "answer": "Mousetrap",
+      "aliases": ["mouse trap", "little nipper", "snap trap"],
+      "closeTerms": ["trap", "mousetrap"],
+      "hints": [
+        "A flat wooden base with a violently spring-loaded steel bar.",
+        "A bait pedal releases the catch, and the bar swings over in a hundredth of a second.",
+        "The classic Little Nipper design dates from 1899 and has barely changed since.",
+        "It gave rise to a proverb about invention and a beaten path to your door.",
+        "Physicists filmed rooms full of them loaded with ping-pong balls to demonstrate chain reactions."
+      ],
+      "fact": "It is among the most-patented devices in history — the US patent office has granted over 4,400 for the category — yet the 1899 sprung-bar design still outsells everything since."
+    },
+    {
+      "answer": "Tape Measure",
+      "aliases": ["measuring tape", "retractable tape measure", "tape measures"],
+      "closeTerms": ["tape", "measure", "ruler"],
+      "hints": [
+        "A coiled metal ribbon in a palm-sized case, clipped to a builder's belt.",
+        "The ribbon is curved across its width, which is what keeps it rigid when extended.",
+        "A spring recoils it, and a thumb catch holds it wherever you stop.",
+        "The hooked end slides by exactly its own thickness, which is not a fault.",
+        "That deliberate play makes the reading identical whether you push against something or pull from it."
+      ],
+      "fact": "The loose hook is intentional: it slides by exactly the thickness of the metal, so an inside measurement and an outside measurement both read true from the same zero."
+    },
+    {
+      "answer": "Bicycle Pump",
+      "aliases": ["bike pump", "track pump", "floor pump", "hand pump"],
+      "closeTerms": ["pump"],
+      "hints": [
+        "A hand-worked cylinder with a plunger and a flexible hose.",
+        "A one-way valve admits air on the up-stroke and refuses to give it back on the down.",
+        "The barrel gets noticeably warm, because compressing a gas heats it.",
+        "The larger kind stands on the floor with a gauge and a plate for your foot.",
+        "The head has to match either a Presta or a Schrader fitting."
+      ],
+      "fact": "The barrel warms because compressing a gas raises its temperature — the same physics as a diesel engine's ignition, just at a far smaller scale."
+    },
+    {
+      "answer": "Fire Extinguisher",
+      "aliases": ["extinguisher", "co2 extinguisher"],
+      "closeTerms": ["extinguisher"],
+      "hints": [
+        "A red pressurised cylinder bracketed to the wall of nearly every public building.",
+        "A pin has to be pulled before the lever will do anything at all.",
+        "Its label carries a colour band saying which classes of blaze it suits.",
+        "The carbon dioxide type has a wide horn that gets cold enough to burn skin.",
+        "The drill is remembered as PASS: pull, aim, squeeze, sweep."
+      ],
+      "fact": "Using the wrong class makes things worse — water on a chip-pan blaze flashes to steam and throws burning oil across the room, which is why the colour bands exist."
+    },
+    {
+      "answer": "Sundial",
+      "aliases": ["sun dial", "garden sundial"],
+      "closeTerms": ["sundial", "dial"],
+      "hints": [
+        "A garden ornament that is also an instrument, and needs no power at all.",
+        "A raised blade called a gnomon casts the shadow you read.",
+        "Double-checking against a clock is confusing: it runs ahead in some months and behind in others.",
+        "The blade has to be tilted to match your latitude or the readings drift all year.",
+        "Mottoes carved on the face traditionally remind you that the hours are slipping away."
+      ],
+      "fact": "It keeps solar time, which drifts up to about 16 minutes ahead of or behind clock time across the year — a discrepancy called the equation of time."
+    },
+    {
+      "answer": "Velcro",
+      "aliases": ["hook and loop", "hook and loop fastener", "touch fastener"],
+      "closeTerms": ["velcro"],
+      "hints": [
+        "Two strips that grip each other and part with a distinctive tearing sound.",
+        "One face is stiff hooks; the other is a dense field of soft loops.",
+        "It came from a walk in the Alps and a close look at burrs stuck to a dog.",
+        "NASA's use of it aboard spacecraft turned it into a household name.",
+        "Its genericised trademark is a blend of the French words for velvet and hook."
+      ],
+      "fact": "George de Mestral patented it in 1955 after examining under a microscope the burdock burrs that clung to his dog on an alpine walk — an early and much-cited case of biomimicry."
+    },
+    {
+      "answer": "Rubik's Cube",
+      "aliases": ["rubiks cube", "rubik cube", "magic cube", "rubix cube"],
+      "closeTerms": ["rubik", "cube", "puzzle"],
+      "hints": [
+        "A handheld object of coloured squares that defined a decade of frustration.",
+        "Twenty-six smaller pieces rotate around a fixed central spindle.",
+        "It has roughly 43 quintillion reachable states, and exactly one of them is solved.",
+        "Any scramble can be undone in twenty moves or fewer, a result proven in 2010.",
+        "A Hungarian professor of architecture built it to teach students about three-dimensional form."
+      ],
+      "fact": "Its inventor built it as a teaching aid and took a month to solve his own creation. The maximum number of moves needed from any position — twenty — was proven by computer search in 2010."
+    },
+    {
+      "answer": "Sextant",
+      "aliases": ["marine sextant", "navigators sextant"],
+      "closeTerms": ["sextant"],
+      "hints": [
+        "A brass instrument with a graduated arc, a small telescope and two mirrors.",
+        "It measures the angle between a celestial body and the horizon.",
+        "Double reflection means a slightly unsteady hand does not ruin the reading.",
+        "With an accurate clock and printed tables, that one angle yields a position line.",
+        "The graduated arc spans one sixth of a circle, which is where its name comes from."
+      ],
+      "fact": "Because it measures the angle between two things seen at once, it works from a pitching deck — the reason it replaced instruments that needed a fixed reference."
+    },
+    {
+      "answer": "Barometer",
+      "aliases": ["aneroid barometer", "mercury barometer"],
+      "closeTerms": ["barometer"],
+      "hints": [
+        "A dial on the hallway wall that people tap out of pure habit.",
+        "It reads the weight of the whole atmosphere standing above you.",
+        "The aneroid kind uses a sealed metal capsule that flexes as the pressure changes.",
+        "Torricelli's original was a column of mercury standing in an open dish.",
+        "A falling reading means unsettled weather is on the way."
+      ],
+      "fact": "Tapping it is not superstition: friction can leave the needle stuck behind the true reading, and the tap frees it — which is where the phrase about tapping for an answer comes from."
+    },
+    {
+      "answer": "Light Bulb",
+      "aliases": ["lightbulb", "electric light bulb", "incandescent bulb"],
+      "closeTerms": ["bulb", "lamp"],
+      "hints": [
+        "A glass envelope on a screw or bayonet base.",
+        "The original kind ran a tungsten thread hot enough to glow, wasting most of its energy as heat.",
+        "The gas sealed inside is inert, to stop that thread burning away.",
+        "It is the standard cartoon shorthand for suddenly having an idea.",
+        "One in a Californian fire station has reportedly been burning since 1901."
+      ],
+      "fact": "The Centennial Bulb in Livermore, California has burned almost continuously since 1901. Running well below its rated power is most of the reason it survived."
+    },
+    {
+      "answer": "Kettle",
+      "aliases": ["electric kettle", "tea kettle", "stovetop kettle"],
+      "closeTerms": ["kettle"],
+      "hints": [
+        "A lidded vessel with a spout and a handle, central to British domestic life.",
+        "Electric versions sit on a contact base and switch themselves off unattended.",
+        "That cut-off is a bimetallic strip bent by steam travelling back down a hidden channel.",
+        "A surge in national electricity demand at the end of a popular broadcast is named after it.",
+        "The stovetop kind announces itself with a whistle instead."
+      ],
+      "fact": "British grid operators plan for \"TV pickup\" — a demand surge of over a gigawatt in the minutes after a big broadcast ends, as millions switch one on at once."
+    }
+  ]
+}

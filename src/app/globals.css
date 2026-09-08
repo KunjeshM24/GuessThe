@@ -1,26 +1,58 @@
 @import "tailwindcss";
 
+/* Design tokens — GamePlan.md Section 6. Single source of truth for colours
+   and type; use the generated utilities (bg-parchment, text-ink-faint,
+   font-display, ...) rather than raw hex anywhere else. */
+@theme {
+  --color-ink: #233b37;
+  --color-parchment: #ede4d3;
+  --color-parchment-dark: #ded0b5;
+  --color-ochre: #c98a2c;
+  --color-moss: #4b6e52;
+  --color-brick: #9e4331;
+  --color-ink-faint: #6f7c77;
+
+  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-sans: var(--font-work-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* The field-journal palette is deliberately light-only (Section 6 defines no
+   dark variant), so we opt out of the browser's dark UA styling. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-parchment);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The profile page's one deliberate motion moment (GamePlan.md Section 6):
+   the newest badge reveals itself, everything else stays still. The
+   prefers-reduced-motion block above already reduces this to nothing. */
+@keyframes badge-reveal {
+  from {
+    opacity: 0;
+    transform: scale(0.9) rotate(-4deg);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.badge-reveal {
+  animation: badge-reveal 420ms ease-out both;
 }

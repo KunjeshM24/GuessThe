@@ -1,69 +1,149 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+import { getViewer } from "@/lib/auth";
+import { PREVIEW_UNLISTED_PACKS } from "@/lib/env.server";
+import { getViewerSummary } from "@/lib/hub.server";
+import { getVisiblePacks } from "@/lib/packs.server";
+import type { VisiblePack } from "@/lib/packs.server";
+
+export const dynamic = "force-dynamic";
+
+// Title and description come from the root layout, which is the one place
+// the site's own name is written.
+export const metadata = { alternates: { canonical: "/" } };
+
+/**
+ * The hub (GamePlan.md Section 4): the bare domain, linking to every live
+ * pack. Each pack also answers on its own subdomain — see `src/proxy.ts`.
+ */
+export default async function Home() {
+  const viewer = await getViewer();
+  const [packs, summary] = await Promise.all([
+    getVisiblePacks(),
+    viewer ? getViewerSummary(viewer.id) : Promise.resolve(null),
+  ]);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-10 sm:px-6 sm:py-16">
+      <header className="max-w-prose">
+        <h1 className="font-display text-4xl leading-tight sm:text-5xl">Daily Dex</h1>
+        <p className="mt-3 text-ink-faint">
+          One puzzle a day, per obsession. Six guesses, a clue after every miss, and a
+          streak worth protecting. Everything is playable without an account.
+        </p>
+      </header>
+
+      {viewer && summary && (
+        <section
+          aria-labelledby="your-progress"
+          className="mt-8 rounded-lg border border-ink/10 bg-parchment-dark p-4 sm:p-5"
+        >
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2
+              id="your-progress"
+              className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-ink-faint"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Your progress
+            </h2>
+            <Link
+              href={`/u/${viewer.username}`}
+              className="text-xs text-ink-faint underline-offset-4 hover:text-ink hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ochre"
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+              Full profile
+            </Link>
+          </div>
+
+          <dl className="mt-3 grid grid-cols-3 gap-3">
+            <Stat label="Current streak" value={summary.currentStreak} />
+            <Stat label="Longest streak" value={summary.longestStreak} />
+            <Stat label="Puzzles solved" value={summary.totalSolved} />
+          </dl>
+        </section>
+      )}
+
+      <section aria-labelledby="packs-heading" className="mt-10">
+        <h2
+          id="packs-heading"
+          className="text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-ink-faint"
+        >
+          {packs.length === 1 ? "Today's pack" : "Today's packs"}
+        </h2>
+
+        {packs.length === 0 ? (
+          <NoPacksYet />
+        ) : (
+          <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+            {packs.map((pack) => (
+              <PackCard key={pack.slug} pack={pack} />
+            ))}
+          </ul>
+        )}
+      </section>
+
+      {PREVIEW_UNLISTED_PACKS && (
+        <p className="mt-8 rounded-sm border border-ochre/40 bg-ochre/10 px-3 py-2 text-xs">
+          <strong className="font-semibold">Preview mode.</strong> Packs that are not yet
+          live are listed because <code>PREVIEW_UNLISTED_PACKS</code> is set. Unset it to
+          see what the public sees.
+        </p>
+      )}
+    </main>
+  );
+}
+
+function Stat({ label, value }: { label: string; value: number }) {
+  return (
+    <div>
+      <dd className="font-display text-2xl leading-none">{value}</dd>
+      <dt className="mt-1.5 text-[0.65rem] uppercase tracking-[0.1em] text-ink-faint">
+        {label}
+      </dt>
+    </div>
+  );
+}
+
+function PackCard({ pack }: { pack: VisiblePack }) {
+  return (
+    <li>
+      <Link
+        href={`/play/${pack.slug}`}
+        className="group flex h-full flex-col rounded-lg border border-ink/10 bg-parchment-dark p-5 transition-colors hover:border-ochre focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ochre"
+      >
+        <span className="flex items-start justify-between gap-3">
+          <span className="font-display text-xl">{pack.name}</span>
+          {!pack.isLive && (
+            <span className="shrink-0 rounded-full border border-ochre/50 px-2 py-0.5 text-[0.6rem] uppercase tracking-[0.1em] text-ochre">
+              Not live
+            </span>
+          )}
+        </span>
+        <span className="mt-1 text-sm text-ink-faint">{pack.description}</span>
+        <span className="mt-4 text-xs font-medium text-ink-faint group-hover:text-ink">
+          Play today&apos;s {pack.noun} &rarr;
+        </span>
+      </Link>
+    </li>
+  );
+}
+
+/**
+ * Both packs ship unlaunched, so this is the state the site is actually in
+ * until the flags are flipped. It has to read like a plan, not a bug.
+ */
+function NoPacksYet() {
+  return (
+    <div className="mt-4 rounded-lg border border-dashed border-ink/25 p-6">
+      <p className="font-display text-lg">Nothing live just yet</p>
+      <p className="mt-1 max-w-prose text-sm text-ink-faint">
+        The first packs are being checked over before they open. Nothing to play here
+        today — but the archive and the leaderboard are already running.
+      </p>
+      <Link
+        href="/leaderboard"
+        className="mt-4 inline-block rounded-md bg-ink px-4 py-2 text-sm font-medium text-parchment transition-opacity hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ochre"
+      >
+        See the leaderboard
+      </Link>
     </div>
   );
 }
